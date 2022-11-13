@@ -1,0 +1,76 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 5em;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+h1, h4{
+    color: #D9381E;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 1px;
+}
+img{
+    max-width: 100%;
+}
+.Testimonial-cards{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.T-Card{
+    max-width: 300px;
+    background-color: #EDEDED;
+    padding: 1.3rem 1.2rem;
+    border-radius: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.T-Card img{
+    border-radius: 50%;
+}
+
+.description, .person-info, .T-Card img{
+    width: 75%;
+}
+
+.person-info h4,  .person-info p{
+    margin: 0;
+    text-align: center;
+}
+
+.person-info h4{
+    margin-bottom: .1rem;
+}
+
+.job-title{
+    color: #7A7A7A;
+    font-size: .8rem;
+}
+
+@media(max-width: 600px){
+    h1{
+        font-size: 3.5em;
+    }
+}
+
+@media(max-width: 360px){
+    h1{
+        font-size: 2.5em;
+    }
+}
